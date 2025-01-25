@@ -76,7 +76,7 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     font-size: 2rem;
-    color: #000080; /* Ashoka Chakra blue */
+    color: #f00707; /* Ashoka Chakra blue */
     font-weight: bold;
     animation: floatText 3s ease-in-out infinite;
 }
