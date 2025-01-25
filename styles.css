@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    position: relative; /* Ensures that the absolute positioning of greeting and name works */
+}
+
+.flag {
+    width: 540px;
+    height: 360px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.orange {
+    height: 120px;
+    background-color: #FF9933;
+}
+
+.white {
+    height: 120px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.green {
+    height: 120px;
+    background-color: #138808;
+}
+
+.chakra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
+    border-radius: 50%;
+    border: 4px solid #000080; /* Navy blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #000080; /* Ashoka Chakra color */
+    border-radius: 50%;
+    position: relative;
+}
+
+.spoke {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: #ffffff;
+    transform-origin: 50% 0%;
+    transform: rotate(0deg);
+}
+
+.greeting, .name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #000080; /* Ashoka Chakra blue */
+    font-weight: bold;
+    animation: floatText 3s ease-in-out infinite;
+}
+
+.greeting {
+    top: 5%;
+}
+
+.name {
+    top: 12%;
+    font-size: 1.8rem; /* Adjust name size */
+}
+
+@keyframes floatText {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
