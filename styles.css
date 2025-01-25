@@ -9,7 +9,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #07550a;
     font-family: Arial, sans-serif;
     position: relative; /* Ensures that the absolute positioning of greeting and name works */
 }
